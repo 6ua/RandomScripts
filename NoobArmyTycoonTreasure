@@ -1,0 +1,60 @@
+local p=game.Players.LocalPlayer;
+local oldcframe;
+local holdingfoil=false;
+p.Character.Humanoid:SetStateEnabled(15,false);
+p.Character.Humanoid:SetStateEnabled(16,false);
+-- p.Character.Humanoid:SetStateEnabled(18,false);
+p.CharacterRemoving:Connect(function()
+    if (p.Character) then
+        local t=p.Character:FindFirstChild("Torso")
+        if (t ~= nil) then oldcframe=t.CFrame end
+        if (p.Character:findFirstChild("Foil")) then holdingfoil=true end
+    end
+end)
+p.CharacterAdded:Connect(function()
+    while p.Character==nil do wait() end
+    while p.Character.Parent==nil do wait() end
+    local h=p.Character:WaitForChild("Humanoid")
+    local rp=p.Character:WaitForChild("HumanoidRootPart")
+    --[[ created by static / "Des" ]]
+    if (h ~= nil and rp ~= nil) then
+        h:SetStateEnabled(15,false);
+        h:SetStateEnabled(16,false);
+        -- h:SetStateEnabled(18,false);
+        for i=1,10 do
+            rp.CFrame=oldcframe;
+        end
+        if (holdingfoil) then
+            holdingfoil=false
+            local foil=p.Backpack:FindFirstChild("Foil")
+            if (foil ~= nil) then
+                foil.Parent=p.Character
+            end
+        end
+    end
+end)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308.375793, 12.4014425, -8.62499809, 0.999952435, -0.00975427311, 0, 0.00975427311, 0.999952435, 0, 0, 0, 1)
+wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-359.498993, 7.12281227, 389.743652, -0.707131386, -0.0034552454, 0.707073808, -0.0010108439, 0.999991953, 0.00387571775, -0.707081556, 0.00202590018, -0.7071292)
+wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(441.081696, 20.5300007)
+wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308.375793, 12.4014425, -8.62499809, 0.999952435, -0.00975427311, 0, 0.00975427311, 0.999952435, 0, 0, 0, 1)
+wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308.375793, 12.4014425, -8.62499809, 0.999952435, -0.00975427311, 0, 0.00975427311, 0.999952435, 0, 0, 0, 1)
+wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308.375793, 12.4014425, -8.62499809, 0.999952435, -0.00975427311, 0, 0.00975427311, 0.999952435, 0, 0, 0, 1)
+wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308.375793, 12.4014425, -8.62499809, 0.999952435, -0.00975427311, 0, 0.00975427311, 0.999952435, 0, 0, 0, 1)
+wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308.375793, 12.4014425, -8.62499809, 0.999952435, -0.00975427311, 0, 0.00975427311, 0.999952435, 0, 0, 0, 1)
+wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308.375793, 12.4014425, -8.62499809, 0.999952435, -0.00975427311, 0, 0.00975427311, 0.999952435, 0, 0, 0, 1)
+wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308.375793, 12.4014425, -8.62499809, 0.999952435, -0.00975427311, 0, 0.00975427311, 0.999952435, 0, 0, 0, 1)
+wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308.375793, 12.4014425, -8.62499809, 0.999952435, -0.00975427311, 0, 0.00975427311, 0.999952435, 0, 0, 0, 1)
+wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308.375793, 12.4014425, -8.62499809, 0.999952435, -0.00975427311, 0, 0.00975427311, 0.999952435, 0, 0, 0, 1)
+wait(3)
